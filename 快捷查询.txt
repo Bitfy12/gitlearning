@@ -1,0 +1,25 @@
+创建环境
+conda create -n your_env_name python=x.x
+
+删除环境
+conda remove -n your_env_name --all
+
+CUDA(11.7 12.4 10.2)
+pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+https://pypi.tuna.tsinghua.edu.cn/simple
+
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124 -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+pip install torch==1.10.1+cu102 torchvision==0.11.2+cu102 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu102/torch_stable.html -i https://pypi.tuna.tsinghua.edu.cn/simple/
+
+print(torch.cuda.is_available())
+
+
+查看已安装的cuda版本（nvidia-smi仅显示可安装的兼容的最大版本，并不一定为当前设备实际使用的cuda版本）
+nvcc -V
+
+cmake
+cmake --version
+
+版本对照查看： https://www.cnblogs.com/jacexu016/p/18409959
